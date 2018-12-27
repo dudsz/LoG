@@ -32,8 +32,8 @@ public class RegisterActivity extends Activity {
 		setContentView(R.layout.activity_register);
 		Log.d(TAG, "In the onCreate() " + this);
 		String lHost = "52.34.67.20";
-		String username = "erlach";
-		String password = "w3stlak3892";
+		String username = "";
+		String password = "";
 		try {
 			String urlString = "jdbc:mysql://" + lHost + ":" + 3306 + "/test";
 			Class.forName("com.mysql.jdbc.Driver");
@@ -104,8 +104,8 @@ public class RegisterActivity extends Activity {
 	}
 	public int regUser(String un, String pw, String pwc, String email) {
 		String lHost = "52.34.67.20";
-		String username = "erlach";
-		String password = "w3stlak3892";
+		String username = "";
+		String password = "";
 		int result = 0;
 		if (un.length() > 0 && pw.length() > 0 && pwc.length() > 0) {
 			if (pw.equals(pwc)) {
